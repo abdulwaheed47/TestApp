@@ -96,32 +96,38 @@ const Login = ({navigation}) => {
           justifyContent: 'center',
           alignSelf: 'center',
         }}>
-        <Text style={{color: '#323232', fontSize: 12, fontWeight: '400'}}>
-          Continue with Google, Apple or Facebook, you agree to Recess go
-        </Text>
         <Text
           style={{
             color: '#323232',
             fontSize: 12,
-            fontWeight: '800',
-            bottom: 14,
-            left: 65,
+            fontWeight: '400',
+            textAlign: 'center',
+            lineHeight: 20,
           }}>
-          Terms and Conditions & Privacy Policy
+          Continue with Google, Apple or Facebook, you agree to Recess go
+          <Text
+            style={{
+              color: '#323232',
+              fontSize: 12,
+              fontWeight: '800',
+            }}>
+            {' '}
+            Terms and Conditions & Privacy Policy{' '}
+          </Text>
         </Text>
       </View>
       <View
         style={{
-          marginBottom: 10,
+          paddingVertical: 10,
           justifyContent: 'center',
           alignSelf: 'center',
           flexDirection: 'row',
         }}>
-        <TouchableOpacity>
+        <View>
           <Text style={{color: '#323232', fontSize: 14, fontWeight: '400'}}>
             Not a member?
           </Text>
-        </TouchableOpacity>
+        </View>
         <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
           <Text
             style={{

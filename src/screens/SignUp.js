@@ -48,22 +48,35 @@ const SignUp = ({navigation}) => {
         />
         <TextField placeholder="New Password" />
         <TextField placeholder="Confirm Password" />
-        <Button btnStyle={{marginTop: 40}} buttonText="Register" />
-      </View>
-      <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
+
         <View
-          style={{
-            height: 15,
-            width: 15,
-            borderRadius: 2,
-            borderWidth: 1,
-            borderColor: 'gray',
-            marginRight: 5,
-          }}></View>
-        <Text style={{}}>
-          Agree to Recess Go Terms and Conditions & Privacy Policy
-        </Text>
+          style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
+          <View
+            style={{
+              marginVertical: 20,
+              height: 15,
+              width: 15,
+              borderRadius: 2,
+              borderWidth: 1,
+              borderColor: 'gray',
+              marginRight: 5,
+            }}></View>
+          <Text style={{fontSize: 14}}>
+            Agree to Recess Go{' '}
+            <Text
+              style={{
+                color: '#323232',
+                fontSize: 14,
+                fontWeight: '800',
+              }}>
+              Terms and Conditions & Privacy Policy
+            </Text>
+          </Text>
+        </View>
+
+        <Button buttonText="Register" />
       </View>
+
       <View
         style={{
           marginTop: 20,
